@@ -1,0 +1,21 @@
+/* Custom styles */
+.video-card {
+    transition: transform 0.2s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+#hanime-player {
+    max-height: 70vh;
+}
+
+/* Pagination active state */
+.pagination-active {
+    background-color: #7c3aed;
+}
+
+.pagination-active:hover {
+    background-color: #6d28d9;
+}

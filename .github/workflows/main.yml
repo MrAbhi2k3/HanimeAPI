@@ -1,0 +1,25 @@
+name: Cloudflare Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Cloudflare API Token
+      uses: cloudflare/setup-cloudflare-action@v1
+      with:
+        api_token: ${{ 2YlSCIFXm8IefYWIOyJP571i9lFr1DFEeMhNV607 }}
+
+    - name: Deploy to Cloudflare Workers
+      uses: cloudflare/workers-action@v2
+      with:
+        name: my-worker
+        path: ./dist

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Hanime API</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <header class="bg-gray-800 shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-purple-400">Hanime API</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="/docs" class="hover:text-purple-400"><i class="fas fa-search mr-1"></i> Search</a></li>
+                    <li><a href="/docs" class="hover:text-purple-400"><i class="fas fa-clock mr-1"></i> Recent</a></li>
+                    <li><a href="/docs" class="hover:text-purple-400"><i class="fas fa-fire mr-1"></i> Trending</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="bg-gray-800 py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>Hanime API - Unofficial API for Hanime.tv</p>
+            <p class="mt-2 text-gray-400 text-sm">
+                <a href="https://github.com/MrAbhi2k3/HanimeApi" class="hover:text-purple-400">
+                    <i class="fab fa-github mr-1"></i> GitHub
+                </a>
+                <span class="mx-2">•</span>
+                Made by MrAbhi2k3
+            </p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

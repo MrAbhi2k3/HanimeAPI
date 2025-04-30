@@ -1,0 +1,9 @@
+lxml
+requests
+img2pdf
+requests_html
+aiofiles
+beautifulsoup4
+fastapi
+uvicorn
+python-dateutil
