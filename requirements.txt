@@ -7,3 +7,4 @@ beautifulsoup4
 fastapi
 uvicorn
 python-dateutil
+Jinja2
